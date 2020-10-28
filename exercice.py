@@ -22,7 +22,20 @@ with ContextManagedList([1,2])as my_list:
 
 
 # TODO: Définissez vos fonction ici
+def compare_files(nom_fichier_1:str,nom_fichier_2:str):
+    with open(nom_fichier_1,"r") as f1, open(nom_fichier_2, "r"):
+        same = True
 
+        while same :
+            a = f1.read()
+            b=f2.rwad()
+
+            same = a == b 
+    return same
+
+def final_space(file1,file2):
+    with open(file1,"r") as data, open(file2,"w")as result:
+        result.write(data.read().replace(" ","  "))
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
